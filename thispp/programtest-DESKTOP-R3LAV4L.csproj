@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B80C78F2-8579-438F-921D-A43B7221BCFF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>programmingQuickSetup</RootNamespace>
+    <AssemblyName>programmingQuickSetup</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>deskicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>programmingQuickSetup.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChoosePictureContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoosePictureContainer.Designer.cs">
+      <DependentUpon>ChoosePictureContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClearRam.cs" />
+    <Compile Include="DeleteRemind.cs" />
+    <Compile Include="ExtensionFunction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtensionFunction.Designer.cs">
+      <DependentUpon>ExtensionFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileNameToText.cs" />
+    <Compile Include="GetExeIcon.cs" />
+    <Compile Include="GetPCId.cs" />
+    <Compile Include="GetRAMInfo.cs" />
+    <Compile Include="GetWeather.cs" />
+    <Compile Include="HasAppRun.cs" />
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetQuickApp.cs" />
+    <Compile Include="OpenWeatherDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenWeatherDialog.Designer.cs">
+      <DependentUpon>OpenWeatherDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PictureControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PictureControl.Designer.cs">
+      <DependentUpon>PictureControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PictureFind.cs" />
+    <Compile Include="PictureWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PictureWindow.Designer.cs">
+      <DependentUpon>PictureWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemindInfo.cs" />
+    <Compile Include="RemindList.cs" />
+    <Compile Include="StartUpSys.cs" />
+    <Compile Include="SwitchWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SwitchWindow.Designer.cs">
+      <DependentUpon>SwitchWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SwitchWindowSave.cs" />
+    <Compile Include="TCPIPwindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TCPIPwindow.Designer.cs">
+      <DependentUpon>TCPIPwindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeAndDateOut.cs" />
+    <Compile Include="TimeCondition.cs" />
+    <Compile Include="TimerSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimerSet.Designer.cs">
+      <DependentUpon>TimerSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Voice.cs" />
+    <Compile Include="WarnningSave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarnningSave.Designer.cs">
+      <DependentUpon>WarnningSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\Weather\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChoosePictureContainer.resx">
+      <DependentUpon>ChoosePictureContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtensionFunction.resx">
+      <DependentUpon>ExtensionFunction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenWeatherDialog.resx">
+      <DependentUpon>OpenWeatherDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PictureControl.resx">
+      <DependentUpon>PictureControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PictureWindow.resx">
+      <DependentUpon>PictureWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SwitchWindow.resx">
+      <DependentUpon>SwitchWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TCPIPwindow.resx">
+      <DependentUpon>TCPIPwindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimerSet.resx">
+      <DependentUpon>TimerSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarnningSave.resx">
+      <DependentUpon>WarnningSave.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\Weather\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Weather\WeatherWebService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\狗.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\deskpic.jpg" />
+    <Content Include="bin\Release\assets\move.ico" />
+    <Content Include="bin\Release\assets\Home.ico" />
+    <Resource Include="bin\Release\assets\stopTimer.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <None Include="bin\Release\assets\SwitchBG.jpg" />
+    <Content Include="deskicon.ico" />
+    <None Include="Resources\arrow_move_16px_1189136_easyicon.net.ico" />
+    <None Include="Resources\Homepage_Optimization_48px_1142006_easyicon.net.png" />
+    <None Include="Resources\LeftRotatet.png" />
+    <Content Include="Resources\one.WAV" />
+    <None Include="Resources\Timer.ico" />
+    <None Include="Resources\RightRotatet.png" />
+    <Content Include="Resources\two.wav" />
+    <None Include="Web References\Weather\WeatherWebService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.webxml.com.cn/WebServices/WeatherWebService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Weather\</RelPath>
+      <UpdateFromURL>http://www.webxml.com.cn/WebServices/WeatherWebService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>thispp_Weather_WeatherWebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\assets\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SpeechLib">
+      <Guid>{C866CA3A-32F7-11D2-9602-00C04F8EE628}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
